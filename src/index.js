@@ -1,3 +1,3 @@
 const express = require('./server')
 
-express.listen(process.env.PORT || 3000)
+express.listen(process.env.PORT || 3333)
