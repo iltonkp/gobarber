@@ -4,8 +4,8 @@ module.exports = (sequelize, DataTypes) => {
   })
 
   Appointment.associate = models => {
-    Appointment.belongsto(models.User, { foreignKey: 'user_id' })
-    Appointment.belongsto(models.User, { foreignKey: 'provider_id' })
+    Appointment.belongsTo(models.User, { foreignKey: 'user_id' })
+    Appointment.belongsTo(models.User, { foreignKey: 'provider_id' })
   }
 
   return Appointment
