@@ -245,6 +245,39 @@ ul.providers {
   color: #fff;
 }
 
+.client {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.client .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.client .wrapper img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.client .wrapper strong {
+  margin-left: 15px;
+  color: #444;
+}
+
+.client .hour {
+  display: flex;
+  align-items: center;
+}
+.client .hour strong {
+  margin-left: 65px;
+  color: #444;
+}
+
 .alert {
   width: 100%;
   padding: 8px 15px;
