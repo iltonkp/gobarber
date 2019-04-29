@@ -5,16 +5,17 @@
     <strong>Olá, {{user.name}}</strong>
     <p>Confira seus agendamentos</p>
 
+  {%for appointment in appointments%}
     <div class="client">
       <div class="wrapper">
-        <img src="/file/{{user.avatar}}">
-        <strong>{{user.name}}</strong>
+        <img src="/file/{{appointment.user.avatar}}">
+        <strong>{{appointment.user.name}}</strong>
       </div>
       <div class="hour">
-        <strong>20/01/2019 15:00:00</strong>
+        <strong>{{appointment.date }}</strong>
       </div>
     </div>
-
+  {%endfor%}
   </div>
 {%endblock%}
 
