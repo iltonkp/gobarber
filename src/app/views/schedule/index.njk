@@ -12,7 +12,7 @@
         <strong>{{appointment.user.name}}</strong>
       </div>
       <div class="hour">
-        <strong>{{appointment.date }}</strong>
+        <strong>{{ appointment.date | date("DD/MM/YYYY - HH:mm") }}</strong>
       </div>
     </div>
   {%endfor%}
